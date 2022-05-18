@@ -1,8 +1,56 @@
+*{margin:0; padding:0;}
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+.title {
+  height: 100px;
+  background-color: dodgerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.content-wrapper {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 700px;
+}
+
+
+.name {
+  width: 700px;
+}
+
+
+.message-content {
+  resize: none;
+  width: 702px;
+  height: 200px;
+}
+
+.submit {
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.submit-button {
+  font-size: 1rem;
+  padding: 15px 50px 15px 50px;
 }

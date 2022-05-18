@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET new post form. */
 router.get('/', function(req, res, next) {
-    res.render('new');
+    res.render('form');
 });
 
 module.exports = router;
