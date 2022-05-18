@@ -7,7 +7,7 @@ block content
       .form
         form(method='POST' action='/new')
           .text-areas
-            input#name.name(type='text' name='name' placeholder='Username')
-            textarea#messageContent.message-content(placeholder='Enter message here!')
+            input#name.name(type='text' name='user' placeholder='Username')
+            textarea#messageContent.message-content(placeholder='Enter message here!' name='message')
           .submit
             button.submit-button(type='submit') submit
