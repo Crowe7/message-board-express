@@ -1,13 +1,15 @@
 extends layout
 
 block content
-    .title
-      a(href='/') mini messages
-    .content-wrapper
-      .form
-        form(method='POST' action='/new')
-          .text-areas
-            input#name.name(type='text' name='user' placeholder='Username')
-            textarea#messageContent.message-content(placeholder='Enter message here!' name='message')
-          .submit
-            button.submit-button(type='submit') submit
+  .title
+    p= ''
+    a.title-name(href='/') mini messages
+    a.new-post(href='/new') New Post
+  .content-wrapper
+    .form
+      form(method='POST' action='/new')
+        .text-areas
+          input#name.name(type='text' name='user' placeholder='Username')
+          textarea#messageContent.message-content(placeholder='Enter message here!' name='message')
+        .submit
+          button.submit-button(type='submit') submit

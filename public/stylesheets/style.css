@@ -23,9 +23,23 @@ textarea:focus {
   height: 100px;
   background-color: dodgerblue;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   color: white;
+
+  position: fixed;
+  width: 100vw;
+  margin-bottom: 300px;
+}
+
+.title-name {
+  margin-left: 115px;
+}
+
+.new-post {
+  font-size: 16px !important;
+  border: 2px solid lightskyblue;
+  padding: 10px 20px 10px 20px;
 }
 
 .title a {
@@ -47,6 +61,7 @@ textarea:focus {
   align-items: center;
   justify-content: center;
   width: 700px;
+  margin-top: 200px;
 }
 
 
@@ -61,6 +76,15 @@ textarea:focus {
 
   .text-areas {
     width: 400px !important;
+  }
+
+  .message-box {
+    width: 90vw !important;
+  }
+
+  .message-text {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
   }
 }
 
@@ -106,3 +130,46 @@ textarea:focus {
   cursor: pointer;
 }
 
+.message-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.message-box {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: grey;
+  width: 70vw;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+}
+
+.message-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  padding-bottom: 3px;
+  border-bottom: 3px solid lightskyblue;
+}
+
+.message-date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.message-text {
+  padding-left: 80px;
+  padding-bottom: 40px;
+  padding-right: 80px;
+}
+
+.message-margin {
+  margin-top: 100px;
+}

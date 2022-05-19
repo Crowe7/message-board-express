@@ -1,9 +1,16 @@
 extends layout
 
 block content
-  h1= title
-  each message in messages
-    h1= message.user
-    h2= message.text
-    h3= message.added
+  .title
+    p= ''
+    a.title-name(href='/') mini messages
+    a.new-post(href='/new') New Post
+  .message-wrapper
+    .message-margin
+      each message in messages
+        .message-box 
+          h1.message-name= message.user
+          p.message-text= message.text 
+          p.message-date= message.added
+
   
